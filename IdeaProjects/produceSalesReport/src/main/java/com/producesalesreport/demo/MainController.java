@@ -12,7 +12,7 @@ public class MainController {
     @RequestMapping ("/")
     public String producesalesreport() {
 
-        int cusNumber = 0123;
+        int cusNumber = 12345;
         String cusName = "Jane Doe";
         double salesAmount = 30.56;
 
@@ -39,7 +39,7 @@ public class MainController {
 
 
 
-        String displayReport = "<b>"+ "Sales Report" +"</b>" + "<p>" + "Customer Number: " + cusNumber + "<p>" + "Customer Name: " + cusName + "<p>" + "Sales Amount: " + salesAmount + "<p>" + "Sales Total: " + salesTotal;
+        String displayReport = "<b>"+ "Sales Report" +"</b>" + "<p>" + "<b>"+ "Customer Number: " + "</b>" + cusNumber + "<p>" + "<b>"+ "Customer Name: "+ "</b>" + cusName + "<p>" + "<b>"+ "Sales Amount: " + "</b>" + salesAmount + "<p>" + "<b>"+ "Sales Total: "+ "</b>" +salesTotal;
 
         System.out.println();
         return displayReport;
